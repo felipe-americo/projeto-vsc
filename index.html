@@ -1,14 +1,102 @@
 <!DOCTYPE html>
-<html lang="pt BR">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>projeto vsc</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<title>Frases de Anime</title>
 </head>
 <body>
-    <h1>projeto lrjx</h1>
-    <p>v.01</p>
-    <script src="app.js"></script>
+
+<h1>Frases de Anime</h1>
+<p class="subtitulo">Frases para te motivar todo dia!</p>
+
+<div class="caixa-frase">
+<p class="frase" id="frase"></p>
+<p class="autor" id="autor"></p>
+<p class="anime" id="anime"></p>
+</div>
+
+<button onclick="proximaFrase()">Próxima Frase</button>
+<button onclick="copiarFrase()">Copiar Frase</button>
+
+<script>
+// Lista de frases
+var frases = [
+{
+texto: "Não importa o quão devagar você vá, desde que não pare.",
+autor: "Rock Lee",
+anime: "Naruto"
+},
+{
+texto: "Se você não lutar pelo que quer, para que você veio até aqui?",
+autor: "Natsu Dragneel",
+anime: "Fairy Tail"
+},
+{
+texto: "As pessoas que continuam tentando são as que vencem no final.",
+autor: "Izuku Midoriya",
+anime: "My Hero Academia"
+},
+{
+texto: "Não chore para desistir; chore para continuar.",
+autor: "Monkey D. Luffy",
+anime: "One Piece"
+},
+{
+texto: "O poder de acreditar em si mesmo é o mais forte que existe.",
+autor: "Simon",
+anime: "Gurren Lagann"
+},
+{
+texto: "Enquanto houver vida, há esperança.",
+autor: "Gon Freecss",
+anime: "Hunter x Hunter"
+},
+{
+texto: "Nenhum sonho é pequeno demais para ser realizado.",
+autor: "All Might",
+anime: "My Hero Academia"
+}
+];
+
+// Controla qual frase está aparecendo
+var indice = 0;
+
+// Função que mostra a frase na tela
+function mostrarFrase() {
+document.getElementById("frase").textContent = '"' + frases[indice].texto + '"';
+document.getElementById("autor").textContent = "— " + frases[indice].autor;
+document.getElementById("anime").textContent = frases[indice].anime;
+}
+
+// Função do botão próxima frase
+function proximaFrase() {
+indice = indice + 1;
+
+// Volta para o começo quando chegar no fim
+if (indice >= frases.length) {
+indice = 0;
+}
+
+mostrarFrase();
+}
+
+// Função do botão copiar
+function copiarFrase() {
+var texto = '"' + frases[indice].texto + '" — ' + frases[indice].autor + ' (' + frases[indice].anime + ')';
+navigator.clipboard.writeText(texto);
+alert("Frase copiada!");
+}
+
+// Mostra a primeira frase ao abrir a página
+mostrarFrase();
+</script>
+
 </body>
-</html>
+</html></body>
+</html><!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<title>Frases de Anime</title>
+</head>
+<body>
