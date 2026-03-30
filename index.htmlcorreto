@@ -14,3 +14,13 @@
     <script src="app.jscorreto"></script>
 </body>
 </html>
+<div id"app">
+
+    <main>
+      <p id="msg">mensagem inicial</p>
+      <button onclick="gradorMensagem()">Girar</button>
+    </main>
+    <nav>
+      <span>home</span>  <span>lista</span>  <span>favoritos</span>  <span>perfil</span>
+    </nav>
+  </div>
