@@ -8,8 +8,8 @@
 </head>
 <body>
     <header>
-        <span id="logo">nomeApp</span>
-        <a id="menu">ajuda</a>
+        <span id="logo">Arise</span>
+        <a id="menu">config</a>
             </header>
     <div id="app">
         <main>
@@ -23,7 +23,7 @@
 </div>  
  <script src="app.js"></script>
  <footer>
-    <p>2026 Projeto Arise. 2° ano do ensino médio em desenvolvimento de sistemas</p>
+    <p>2026 AriseDev. Todos Direitos Reservados</p>
 </footer>
 </body>
 </html>
