@@ -1,11 +1,11 @@
-* * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(255, 255, 255)(0, 225, 255, 0.911);
+    background-color: #0a0a0a;
     color: rgb(255, 255, 255);
     display: flex; 
     justify-content: center;
@@ -13,7 +13,7 @@ body {
 }
 
 #app {
-    background: #000000;
+    background: #4b4b4b56;
     display: flex;
     flex-direction: column;
     width: 380px;
@@ -34,7 +34,7 @@ main {
 }
 
 nav {
-    border-top: 2px solid black;
+    border-top: 2px solid #adadad;
     display: flex;
     align-items: center;
     padding: 10px;
@@ -42,7 +42,9 @@ nav {
 }
 
 #gerar{
-    border-radius: 10%
+    border-radius: 50px;
+
+    
     
 }
 
@@ -56,4 +58,27 @@ nav {
 button{
     width:80px;
     height:80px;
+
+}
+body {
+    flex-direction: column;
+}
+
+#app {
+    margin: 50px;
+}
+
+header {
+    color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+}
+
+footer {
+    pading: 20px;
 }
