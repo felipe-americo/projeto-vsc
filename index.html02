@@ -7,7 +7,10 @@
    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <span id="logo">nomeApp</span>
+        <a id="menu">ajuda</a>
+            </header>
     <div id="app">
         <main>
         <h1>Arise: Frases Diárias</h1>
@@ -19,5 +22,8 @@
         </nav>
 </div>  
  <script src="app.js"></script>
+ <footer>
+    <p>2026 Projeto Arise. 2° ano do ensino médio em desenvolvimento de sistemas</p>
+</footer>
 </body>
 </html>
