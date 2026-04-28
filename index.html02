@@ -1,148 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <title>Frases de Anime</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto VSCode</title>
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <h1>Frases de Anime</h1>
-  <p id="subtitulo">Frases para te motivar todo dia!</p>
-
-  <div id="caixa-frase">
-    <p  id="frase"></p>
-    <p  id="autor"></p>
-    <p  id="anime"></p>
-  </div>
-
-  <button onclick="proximaFrase()">Próxima Frase</button>
-</script>
-
-</body></button>
-
-  <script>
-    let frases = [
-      {
-        texto: "Não importa o quão devagar você vá, desde que não pare.",
-        autor: "Rock Lee",
-        anime: "Naruto"
-      },
-      {
-        texto: "Se você não lutar pelo que quer, para que você veio até aqui?",
-        autor: "Natsu Dragneel",
-        anime: "Fairy Tail"
-      },
-      {
-        texto: "As pessoas que continuam tentando são as que vencem no final.",
-        autor: "Izuku Midoriya",
-        anime: "My Hero Academia"
-      },
-      {
-        texto: "Não chore para desistir; chore para continuar.",
-        autor: "Monkey D. Luffy",
-        anime: "One Piece"
-      },
-      {
-        texto: "O poder de acreditar em si mesmo é o mais forte que existe.",
-        autor: "Simon",
-        anime: "Gurren Lagann"
-      },
-      {
-        texto: "Enquanto houver vida, há esperança.",
-        autor: "Gon Freecss",
-        anime: "Hunter x Hunter"
-      },
-      {
-        texto: "Nenhum sonho é pequeno demais para ser realizado.",
-        autor: "All Might",
-        anime: "My Hero Academia"
-      },
-      {
-        texto: "Se você não consegue suportar o calor, então morra. Se você sobreviver, continue vivendo.",
-        autor: "Aizawa Shouta",
-        anime: "My Hero Academia"
-      },
-      {
-        texto: "Não existe caminho fácil para o topo. Você tem que subir degrau por degrau.",
-        autor: "Killua Zoldyck",
-        anime: "Hunter x Hunter"
-      },
-      {
-        texto: "Quem não arrisca não petisca — e quem não petisca fica com fome.",
-        autor: "Spike Spiegel",
-        anime: "Cowboy Bebop"
-      },
-      {
-        texto: "O momento em que você desiste é o momento em que você fracassa.",
-        autor: "Gintoki Sakata",
-        anime: "Gintama"
-      },
-      {
-        texto: "Trabalho duro é inútil para quem não acredita em si mesmo.",
-        autor: "Naruto Uzumaki",
-        anime: "Naruto"
-      },
-      {
-        texto: "Não importa o quanto você se machuque, você tem que continuar vivendo.",
-        autor: "Piccolo",
-        anime: "Dragon Ball Z"
-      },
-      {
-        texto: "A força que não tem raiz murcha.",
-        autor: "Vegeta",
-        anime: "Dragon Ball Z"
-      },
-      {
-        texto: "Só há uma coisa necessária: tudo.",
-        autor: "Lelouch vi Britannia",
-        anime: "Code Geass"
-      },
-      {
-        texto: "Nada é mais doloroso do que se arrepender de algo que você nunca fez.",
-        autor: "Rukia Kuchiki",
-        anime: "Bleach"
-      },
-      {
-        texto: "Quando você perde a razão de lutar, é aí que você realmente perde.",
-        autor: "Erza Scarlet",
-        anime: "Fairy Tail"
-      },
-      {
-        texto: "A vida não é um jogo de sorte. É de escolhas.",
-        autor: "Lelouch vi Britannia",
-        anime: "Code Geass"
-      },
-      {
-        texto: "Mesmo que eu seja o único a acreditar, vou lutar até o fim.",
-        autor: "Saber",
-        anime: "Fate/stay night"
-      },
-      {
-        texto: "Não há vergonha em cair. A vergonha está em não se levantar.",
-        autor: "Shoto Todoroki",
-        anime: "My Hero Academia"
-      }
-    ];
-
-    let indice = 0;
-
-    function mostrarFrase() {
-      document.getElementById("frase").textContent = '"' + frases[indice].texto + '"';
-      document.getElementById("autor").textContent = "— " + frases[indice].autor;
-      document.getElementById("anime").textContent = frases[indice].anime;
-    }
-
-    function proximaFrase() {
-      indice = indice + 1;
-      if (indice >= frases.length) {
-        indice = 0;
-      }
-      mostrarFrase();
-    }
-
-    mostrarFrase();
-  </script>
-
+    
+    <div id="app">
+        <main>
+        <h1>Arise: Frases Diárias</h1>
+            <p id="msg">Frase Inicial</p>
+                <button onclick="geradorMensagem()" id="gerar">Próxima Frase</button>
+        </main>  
+       <nav>  
+            <span><img src="img/share.svg"></span> <span><img src="img/house.svg"></span> <span><img src="img/heart.svg"></span>  <span><img src="img/list.svg"></span>
+        </nav>
+</div>  
+ <script src="app.js"></script>
 </body>
 </html>
