@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #0a0a0a;
+    background-color: #000000;
     color: rgb(255, 255, 255);
     display: flex; 
     justify-content: center;
@@ -20,7 +20,7 @@ body {
     height: 500px;
     padding: 15px;
     border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 10px rgb(254, 254, 254);
 }
 
 main {
@@ -56,8 +56,9 @@ nav {
 }
 
 button{
-    width:80px;
-    height:80px;
+    width:90px;
+    height:50px;
+    color: black;
 
 }
 body {
@@ -76,9 +77,10 @@ header {
     justify-content: space-between;
     width: 100%;
     align-items: center;
-    padding: 10px;
+    padding: 5px;
 }
 
 footer {
-    pading: 20px;
+    padding: 20px;
+    color: rgb(255, 255, 255);
 }

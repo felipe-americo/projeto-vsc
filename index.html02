@@ -8,8 +8,8 @@
 </head>
 <body>
     <header>
-        <span id="logo">Arise</span>
-        <a id="menu">config</a>
+        <span id="logo">Help</span>
+        <a id="menu">Conta</a>
             </header>
     <div id="app">
         <main>
